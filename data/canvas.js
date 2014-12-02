@@ -9,14 +9,14 @@ var canvas = document.querySelector('canvas'),
       4: [6, 0, 13]
     };
 
-addon.on('message', ({count, duplicated}) => {
+self.on('message', ({count, duplicated}) => {
   var [size, xPos, yPos] = ctxInfo[count.length];
 
   ctx.font = size + 'pt Arial';
   ctx.fillStyle = duplicated ? 'red' : 'black';
   ctx.fillText(count, xPos, yPos);
 
-  addon.postMessage(canvas.toDataURL());
+  self.postMessage(canvas.toDataURL());
 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 });
