@@ -2,7 +2,7 @@
   "id": "hatena-bookmark-counter@syoichi.github.io",
   "name": "hatena-bookmark-counter",
   "title": "Hatena Bookmark Counter",
-  "description": "simple Hatena Bookmark Counter for Firefox 29+ by Add-on SDK",
+  "description": "simple Hatena Bookmark Counter for Firefox 35+ by Add-on SDK",
   "icon": "./data/icon/icon48.png",
   "icon64": "./data/icon/icon64.png",
   "author": "syoichi",
